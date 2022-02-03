@@ -44,7 +44,10 @@
     font-size: 15vh;
     text-align: center;
     width: 40vh;
-    background: var(--bg);
+    background: transparent;
+}
+
+#Oka {
     color: var(--accent);
 }
 

@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+
+/* Color Vars */
+:root {
+    /* Light Mode Hurts when it's done wrong */
+    --accent: #EB6C11;
+    --bg: #97ecff;
+    --sbg: #FFAA6A;
+    --fg: #262219;
+    --sfg: #8A2A00;
+}
+/* Dark Theme's have to be pretty and pitch black */
+.darktheme {
+    --accent: #EB6C11;
+    --bg: #97ecff;
+    --sbg: #FFAA6A;
+    --fg: #262219;
+    --sfg: #8A2A00;
+}
+
+/* Those Styles gotta be looking like Marty McFly */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: 0.3s ease-in-out;
+}
+
+.hotbod {
+    font-family: -apple-system, BlinkMacSystemFont;
+    padding-left: 25vw;
+    padding-right: 25vw;
+    padding-top: 10vh;
+    width: 90vw;
+    height: 125vh;
+    background-color: var(--bg);
+}
+

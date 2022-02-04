@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+
+/* V A R I A B L E S */
+
+:root {
+  /* Fonts  */
+  --fsg: 135px; /* Time and Greetings */
+  --fsm: 75px; /* Date */
+  --fss: 25px; /* Greetings and Weather widger */
+  --fses: 16px; /* Links List */
+
+  /* Light theme  */
+  --accent: #f2222f; /* Hover color */
+  --bg: #ffa7a7; /* Background color */
+  --sbg: #ff6d79; /* Cards color */
+  --fg: #0f1010; /* Foreground color */
+  --sfg: #0f1010; /* Sceondary Foreground color */
+
+  /* fuck you 1 */
+  --imgcol: linear-gradient(
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.7)
+  ); /* Filter color */
+}
+
+/* Dark theme  */
+.darktheme {
+  --accent: #ff6d79; /* Hover color */
+  --bg: #0f1010; /* Background color */
+  --sbg: #0000003f; /* Cards color */
+  --fg: #ff6d79; /* Foreground color */
+  --sfg: #000000c0; /* Secondary Foreground color */
+  /* fuck you 2 */
+  --imgcol: linear-gradient(
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)
+  ); /* Filter color */
+}
+
+/* S T Y L E S */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .body1 {
+    font-family: Helvetica;
+    padding: 20vh;
+    width: auto;
+    height: auto;
+    background-color: var(--bg);
+  }
+
+ß.body2 {
+    font-family: Helvetica;
+    padding-left: 200px;
+    padding-right: 25px;
+    width: 90vw;
+    height: 120vh;
+    background-color: var(--bg);
+  }
+
+  /* Header/Blog Title */
+.header1 {
+  padding: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  text-align: center;
+  width: 40vh;
+  background: var(--bg);
+}
+
+.header2 {
+  padding: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  text-align: justify;
+  width: 40vh;
+  padding-top: 580px;
+  background: var(--bg);
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 50%;
+  padding-right: 10px;
+}
+
+.leftcolumn-vid {
+  float: left;
+  width: 70%;
+  padding-right: 10px;
+}
+
+/* Right column */
+.rightcolumn {
+  float: right;
+  width: 90%;
+  padding-left: 10px;
+}
+/* Theme Button */
+
+#themeButton {
+  position: absolute;
+  margin: 2em 2em 0 0;
+  right: 0;
+  top: 0;
+  color: var(--fg);
+  border: none;
+  cursor: pointer;
+  background-color: var(--bg);
+}
+
+#themeButton__icon {
+  width: 25px;
+  height: 25px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: transparent;
+  padding: 5vh;
+  margin-top: 50px;
+  border: 5px;
+  border-style:solid;
+  border-color: var(--accent);
+}
+
+.card:hover {
+  transform: translateY(-0.2rem);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.35);
+}
+
+.card-vid {
+  background-color: transparent;
+  padding: 10px;
+  margin-top: 50px;
+  border: 2px;
+  border-style:solid;
+  border-color: var(--accent);
+  width: auto;
+  height: 56vh;
+}
+
+.card-vid:hover {
+  transform: translateY(-0.2rem);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.35);
+}
+
+iframe {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.ytlinkbt {
+  color: var(--accent);
+}
+
+.ytlinkbt:hover {
+  background: var(--sbg);
+  color: #0f1010;
+}
+
+/* Footer */
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: var(--sbg);
+  margin-top: 20px;
+}
